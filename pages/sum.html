@@ -1,0 +1,54 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Обрахунок(форма)</title>
+	
+	<script src="https://code.jquery.com/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/b
+	ootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="css/button.css">
+</head>
+<body>
+<center><form>
+<table border=2 cellspacing=2 width=350 bgcolor="#ffedcd">
+	<tr align=centre>
+	<th align=right>Форма для розрахунку</th>
+	<td>
+		<input type=text name=expr size=15>
+	</td>
+	<td rowspan=2>
+		<input type=button value="Обчислити" onclick= "calc(this.form)">
+	</td>
+	</tr><tr align=centet>
+	<th align= right>Результат:</th>
+	<td>
+		<input type=text name=result size=15>
+	</td>
+	</tr>
+</table>
+</center></form>
+<script>
+ function calc(form){
+		form.result.value=eval(form.expr.value);
+	 } 
+</script>
+<style>
+body {
+  margin: 0;
+  background-image: url(../images/fon.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.button {
+
+}
+</style>
+<a h
+</body>
+</html>
